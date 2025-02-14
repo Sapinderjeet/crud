@@ -28,6 +28,7 @@ public class EmployeeController {
 	public ResponseEntity<List<Employee>> getAllEmployees(){
 		List<Employee> allEmployees = employeeServiceInterface.findAll();
 		return new ResponseEntity<List<Employee>>(allEmployees, HttpStatus.OK);
+		//Syso did some changes
 	}
 	
 	@GetMapping("/emp/{empid}")
